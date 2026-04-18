@@ -2,7 +2,7 @@ import numpy as np
 
 class Layer:
     def __init__ (self, numNeurons, numInputs):
-        self.weights = np.random.rand(numNeurons, numInputs) * 0.1
+        self.weights = np.random.rand(numInputs, numNeurons) * 0.1
         self.biases = np.zeros((1, numNeurons))
 
     def forward(self, input):
