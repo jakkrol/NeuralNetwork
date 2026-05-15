@@ -115,7 +115,10 @@ global_best_fitness = 0
 
 while True:
     pygame.time.Clock().tick(30)
-
+    for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                exit()
     ############# NEURON DECISION ##################
     for bird in birds:
         pipe_index = 0

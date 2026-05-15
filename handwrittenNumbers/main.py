@@ -20,6 +20,7 @@ train_labels = load_data_labels('mnist-dataset/versions/1/train-labels.idx1-ubyt
 test_img = load_data_img('mnist-dataset/versions/1/t10k-images.idx3-ubyte')
 test_labels = load_data_labels('mnist-dataset/versions/1/t10k-labels.idx1-ubyte')
 
+print("Handwritten number recognition \n")
 
 net = Network()
 epochs = 8
